@@ -1033,10 +1033,10 @@ def compute_persistence_diagram(data, max_dimension=1):
         }
         
     except Exception as e:
-    import traceback
-    print(f"Error in TDA computation: {e}")
-    print(traceback.format_exc())
-    raise ValueError("Critical TDA failure: unable to compute persistent homology on the provided data.")
+        import traceback
+        print(f"Error in TDA computation: {e}")
+        print(traceback.format_exc())
+        raise ValueError("Critical TDA failure: unable to compute persistent homology on the provided data.")
 
 def plot_persistence_diagram(results, show_labels=True):
     """
