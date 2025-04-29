@@ -2251,7 +2251,7 @@ with tab4:
                         
                     # Run TDA analysis
                     try:
-                        tda_results = compute_persistence_diagram(data)
+                        tda_results = compute_persistence_diagram(tda_data)
                     # Feedback implementation - Continue with plotting etc and show this on webpage only when it fails.
                     except ValueError as e:
                         st.error(f"TDA computation failed: {e}")
